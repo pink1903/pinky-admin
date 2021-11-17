@@ -28,8 +28,8 @@ const Footer: React.FC = () => {
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
+          key: 'Pinky Design',
+          title: 'Pinky Design',
           href: 'https://ant.design',
           blankTarget: true,
         },
