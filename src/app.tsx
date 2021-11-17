@@ -20,27 +20,28 @@ export const initialStateConfig = {
  * */
 
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
+//
+// // Your web app's Firebase configuration
+// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBbuupqy8r8-pdRCRih7sHBrG25WOXbtRk",
+//   authDomain: "pinkygroup-admin.firebaseapp.com",
+//   projectId: "pinkygroup-admin",
+//   storageBucket: "pinkygroup-admin.appspot.com",
+//   messagingSenderId: "542174324887",
+//   appId: "1:542174324887:web:f922502174d0f7fecca1d2",
+//   measurementId: "G-SNYTYQF5GE"
+// };
+//
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// const analytics = getAnalytics(app);
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBbuupqy8r8-pdRCRih7sHBrG25WOXbtRk",
-  authDomain: "pinkygroup-admin.firebaseapp.com",
-  projectId: "pinkygroup-admin",
-  storageBucket: "pinkygroup-admin.appspot.com",
-  messagingSenderId: "542174324887",
-  appId: "1:542174324887:web:f922502174d0f7fecca1d2",
-  measurementId: "G-SNYTYQF5GE"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const analytics = getAnalytics(app);
 export async function getInitialState(): Promise<{
   settings?: Partial<LayoutSettings>;
   currentUser?: API.CurrentUser;

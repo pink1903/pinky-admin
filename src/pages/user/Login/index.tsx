@@ -50,7 +50,7 @@ const Login: React.FC = () => {
       if (msg.status === 'ok') {
         const defaultLoginSuccessMessage = intl.formatMessage({
           id: 'pages.login.success',
-          defaultMessage: '登录成功！',
+          defaultMessage: 'defaultMessage！',
         });
         message.success(defaultLoginSuccessMessage);
         await fetchUserInfo();
@@ -75,7 +75,7 @@ const Login: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.lang} data-lang>
+      <div className={styles.lang} data-lang="">
         {SelectLang && <SelectLang />}
       </div>
       <div className={styles.content}>
